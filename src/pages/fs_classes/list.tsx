@@ -3,7 +3,7 @@ import {
     useDataGrid,
     EditButton,
     ShowButton,
-    DeleteButton,
+//    DeleteButton,
     List,
 //    Checkbox,
 } from "@refinedev/mui";
@@ -16,14 +16,14 @@ import { useMany } from "@refinedev/core";
 export const FsClassList = () => {
     const { dataGridProps } = useDataGrid();
 
-    const { data: categoryData, isLoading: categoryIsLoading } = useMany({
+    const { data: categoryData } = useMany({
         resource: "fs_prodcategory",
         ids: dataGridProps?.rows?.map((item: any) => item?.category) ?? [],
         queryOptions: {
             enabled: !!dataGridProps?.rows,
         },
     });
-    const { data: eventtypeData, isLoading: eventtypeIsLoading } = useMany({
+    const { data: eventtypeData } = useMany({
         resource: "fs_eventtype",
         ids: dataGridProps?.rows?.map((item: any) => item?.eventtype) ?? [],
         queryOptions: {

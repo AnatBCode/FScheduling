@@ -1,17 +1,17 @@
 
 //////////////////////////////////////
 import React from 'react';
-import { Refine, Authenticated, WelcomePage, } from '@refinedev/core';
+import { Refine, Authenticated, } from '@refinedev/core';
 import {
     AuthPage,
     notificationProvider,
-    ErrorComponent,
+//    ErrorComponent,
     RefineSnackbarProvider,
     RefineThemes,
     ThemedLayout,
 //    Icons
 } from '@refinedev/mui';
-import { dataProvider, liveProvider } from '@refinedev/supabase';
+import { dataProvider, } from '@refinedev/supabase';
 import routerProvider, {NavigateToResource,CatchAllNavigate} from '@refinedev/react-router-v6';
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
@@ -31,7 +31,7 @@ import GoogleIcon from "@mui/icons-material/Google";
 
 import { MuiInferencer } from "@refinedev/inferencer/mui";
 
-import { FsPackageList } from "pages/fs_packages/list";
+//import { FsPackageList } from "pages/fs_packages/list";
 import { FsClassList } from "pages/fs_classes/list"; 
 import { ClassEdit } from "pages/fs_classes/edit";
 

@@ -2,7 +2,7 @@ import { Edit, useAutocomplete,  } from "@refinedev/mui";
 import { Box, TextField, Checkbox, FormControlLabel, Autocomplete  } from "@mui/material";
 import { useForm } from "@refinedev/react-hook-form";
 import { Controller } from "react-hook-form";
-import { useUpdate } from  "@refinedev/core";
+//import { useUpdate } from  "@refinedev/core";
 
 export const ClassEdit = () => {
     const {
